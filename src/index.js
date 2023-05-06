@@ -6,6 +6,7 @@ import App from './App';
 import { BrowserRouter   } from 'react-router-dom';
 
 import "./Style/Common.scss"
+import "./Style/responsive.scss"
 
 
 

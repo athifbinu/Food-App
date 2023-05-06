@@ -13,6 +13,41 @@ import customer6 from "../img/customers/customer-6.jpg"
 import hero from "../img/hero.webp"
 import heroMin from "../img/hero-min.png"
 
+import techchurch from "../img/logos/techcrunch.png"
+import businessInsider from "../img/logos/business-insider.png"
+import newyork from "../img/logos/the-new-york-times.png"
+import forbes from "../img/logos/forbes.png"
+import usa from "../img/logos/usa-today.png"
+
+import screen1 from "../img/app/app-screen-1.png"
+import screen2 from "../img/app/app-screen-2.png"
+import screen3 from "../img/app/app-screen-3.png"
+
+import meal1 from "../img/meals/meal-1.jpg"
+import meal2 from "../img/meals/meal-2.jpg"
+
+import dave from "../img/customers/dave.jpg"
+import ben from "../img/customers/ben.jpg"
+import steve from "../img/customers/steve.jpg"
+import hanah  from "../img/customers/hannah.jpg"
+
+
+import galery1 from "../img/gallery/gallery-1.jpg"
+import galery2 from "../img/gallery/gallery-2.jpg"
+import galery3 from "../img/gallery/gallery-3.jpg"
+import galery4 from "../img/gallery/gallery-4.jpg"
+import galery5 from "../img/gallery/gallery-5.jpg"
+import galery6 from "../img/gallery/gallery-6.jpg"
+import galery7 from "../img/gallery/gallery-7.jpg"
+import galery8 from "../img/gallery/gallery-8.jpg"
+import galery9 from "../img/gallery/gallery-9.jpg"
+import galery10 from "../img/gallery/gallery-10.jpg"
+import galery11 from "../img/gallery/gallery-11.jpg"
+import galery12 from "../img/gallery/gallery-12.jpg"
+
+
+
+
 
 const Home = () => {
   return (
@@ -67,17 +102,17 @@ const Home = () => {
         <div class="container">
           <h2 class="heading-featured-in">As featured in</h2>
           <div class="logos">
-            <img src="img/logos/techcrunch.png" alt="Techcrunch logo" />
+            <img src={techchurch} alt="Techcrunch logo" />
             <img
-              src="img/logos/business-insider.png"
+              src={businessInsider}
               alt="Business Insider logo"
             />
             <img
-              src="img/logos/the-new-york-times.png"
+              src={newyork}
               alt="The New York Times logo"
             />
-            <img src="img/logos/forbes.png" alt="Forbes logo" />
-            <img src="img/logos/usa-today.png" alt="USA Today logo" />
+            <img src={forbes} alt="Forbes logo" />
+            <img src={usa} alt="USA Today logo" />
           </div>
         </div>
       </section>
@@ -107,7 +142,7 @@ const Home = () => {
 
           <div class="step-img-box">
             <img
-              src="img/app/app-screen-1.png"
+              src={screen1}
               class="step-img"
               alt="iPhone app
             preferences selection screen"
@@ -117,7 +152,7 @@ const Home = () => {
       
           <div class="step-img-box">
             <img
-              src="img/app/app-screen-2.png"
+              src={screen2}
               class="step-img"
               alt="iPhone app
             meal approving plan screen"
@@ -145,7 +180,7 @@ const Home = () => {
           </div>
           <div class="step-img-box">
             <img
-              src="img/app/app-screen-3.png"
+              src={screen3}
               class="step-img"
               alt="iPhone app
             delivery screen"
@@ -165,7 +200,7 @@ const Home = () => {
         <div class="container grid grid--3-cols margin-bottom-md">
           <div class="meal">
             <img
-              src="img/meals/meal-1.jpg"
+              src={meal1}
               class="meal-img"
               alt="Japanese Gyozas"
             />
@@ -196,7 +231,7 @@ const Home = () => {
 
           <div class="meal">
             <img
-              src="img/meals/meal-2.jpg"
+              src={meal2}
               class="meal-img"
               alt="Avocado Salad"
             />
@@ -284,7 +319,7 @@ const Home = () => {
               <img
                 class="testimonial-img"
                 alt="Photo of customer Dave Bryson"
-                src="img/customers/dave.jpg"
+                src={dave}
               />
               <blockquote class="testimonial-text">
                 Inexpensive, healthy and great-tasting meals, without even
@@ -297,7 +332,7 @@ const Home = () => {
               <img
                 class="testimonial-img"
                 alt="Photo of customer Ben Hadley"
-                src="img/customers/ben.jpg"
+                src={ben}
               />
               <blockquote class="testimonial-text">
                 The AI algorithm is crazy good, it chooses the right meals for
@@ -310,7 +345,7 @@ const Home = () => {
               <img
                 class="testimonial-img"
                 alt="Photo of customer Steve Miller"
-                src="img/customers/steve.jpg"
+                src={steve}
               />
               <blockquote class="testimonial-text">
                 Omnifood is a life saver! I just started a company, so there's
@@ -323,7 +358,7 @@ const Home = () => {
               <img
                 class="testimonial-img"
                 alt="Photo of customer Hannah Smith"
-                src="img/customers/hannah.jpg"
+                src={hanah}
               />
               <blockquote class="testimonial-text">
                 I got Omnifood for the whole family, and it frees up so much
@@ -337,7 +372,7 @@ const Home = () => {
         <div class="gallery">
           <figure class="gallery-item">
             <img
-              src="img/gallery/gallery-1.jpg"
+              src={galery1}
               alt="Photo of beautifully
             arranged food"
             />
@@ -345,77 +380,77 @@ const Home = () => {
           </figure>
           <figure class="gallery-item">
             <img
-              src="img/gallery/gallery-2.jpg"
+              src={galery2}
               alt="Photo of beautifully
             arranged food"
             />
           </figure>
           <figure class="gallery-item">
             <img
-              src="img/gallery/gallery-3.jpg"
+              src={galery3}
               alt="Photo of beautifully
             arranged food"
             />
           </figure>
           <figure class="gallery-item">
             <img
-              src="img/gallery/gallery-4.jpg"
+              src={galery4}
               alt="Photo of beautifully
             arranged food"
             />
           </figure>
           <figure class="gallery-item">
             <img
-              src="img/gallery/gallery-5.jpg"
+              src={galery5}
               alt="Photo of beautifully
             arranged food"
             />
           </figure>
           <figure class="gallery-item">
             <img
-              src="img/gallery/gallery-6.jpg"
+              src={galery6}
               alt="Photo of beautifully
             arranged food"
             />
           </figure>
           <figure class="gallery-item">
             <img
-              src="img/gallery/gallery-7.jpg"
+              src={galery7}
               alt="Photo of beautifully
             arranged food"
             />
           </figure>
           <figure class="gallery-item">
             <img
-              src="img/gallery/gallery-8.jpg"
+              src={galery8}
               alt="Photo of beautifully
             arranged food"
             />
           </figure>
           <figure class="gallery-item">
             <img
-              src="img/gallery/gallery-9.jpg"
+              src={galery9}
               alt="Photo of beautifully
             arranged food"
             />
           </figure>
           <figure class="gallery-item">
             <img
-              src="img/gallery/gallery-10.jpg"
+              src={galery10}
               alt="Photo of beautifully
             arranged food"
             />
           </figure>
           <figure class="gallery-item">
             <img
-              src="img/gallery/gallery-11.jpg"
+              src={galery11}
               alt="Photo of beautifully
             arranged food"
             />
           </figure>
           <figure class="gallery-item">
             <img
-              src="img/gallery/gallery-12.jpg"
+              src={galery12}
               alt="Photo of beautifully
             arranged food"
             />
