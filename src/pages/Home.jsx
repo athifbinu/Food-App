@@ -2,6 +2,7 @@ import React from 'react'
 import "../Style/Home.css"
 
 
+
 //images
 import customer1 from "../img/customers/customer-1.jpg"
 import customer2 from "../img/customers/customer-2.jpg"
@@ -47,6 +48,7 @@ import galery12 from "../img/gallery/gallery-12.jpg"
 
 
 
+import { Link } from 'react-router-dom'
 
 
 const Home = () => {
@@ -59,15 +61,15 @@ const Home = () => {
             <h1 class="heading-primary">
               A healthy meal delivered to your door, every single day
             </h1>
-            <p class="hero-description">
+            <p className="hero-description">
               The smart 365-days-per-year food subscription that will make you
               eat healthy again. Tailored to your personal tastes and
               nutritional needs.
             </p>
-            <a href="#cta" class="btn btn--full margin-right-sm"
-              >Start eating well</a>
+            <Link to="/foos" class="btn btn--full margin-right-sm"
+              >Start eating well</Link>
 
-            <a href="#how" class="btn btn--outline">Learn more &darr;</a>
+            <Link to="/foods" className="btn btn--outline">Learn more &darr;</Link>
             <div class="delivered-meals">
               <div class="delivered-imgs">
                 <img src={customer1} alt="Customer photo" />
@@ -491,7 +493,7 @@ const Home = () => {
               </li>
             </ul>
             <div class="plan-sing-up">
-              <a href="#" class="btn btn--full">Start eating well</a>
+              <Link to="/foods" class="btn btn--full">Start eating well</Link>
             </div>
           </div>
 
@@ -520,7 +522,7 @@ const Home = () => {
               </li>
             </ul>
             <div class="plan-sing-up">
-              <a href="#" class="btn btn--full">Start eating well</a>
+              <Link to="foods" class="btn btn--full">Start eating well</Link>
             </div>
           </div>
         </div>
@@ -613,11 +615,11 @@ const Home = () => {
                     <option value="others">Others</option>
                   </select>
                 </div>
+                 
+                 <Link to="signup">
+                 <button  class="btn btn--form">Sign up now</button>
+                 </Link>
 
-                <button class="btn btn--form">Sign up now</button>
-
-                 <input type="checkbox" />
-                <input type="number" /> 
               </form>
             </div>
             <div

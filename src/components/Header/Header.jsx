@@ -1,34 +1,47 @@
-import React from 'react'
+
 
 import "./Header.css"
 
 import logo from "../../img/omnifood-logo.png"
+import { Link } from 'react-router-dom'
+import { useState } from 'react'
+
+
+
+
+
 
 const Header = () => {
+
+
+
+
+
   return (
     <header className='header'>
-     <a href="">
+     <Link to="/home">
       <img className='logo' src={logo} alt="Omnifood logo" />
-     </a>
+     </Link>
 
 
      <nav className='main-nav'>
           <ul className='main-nav-list'>
-          <li><a class="main-nav-link" href="#how">How it works</a></li>
-          <li><a class="main-nav-link" href="#meals">Meals</a></li>
+          <li><Link className="main-nav-link" to="/home">Home</Link></li>
+          <li><Link className="main-nav-link" to="/foods">All Foods</Link></li>
           <li>
-            <a class="main-nav-link" href="#testimonials">Testimonials</a>
+            <Link className="main-nav-link" to="/cart">Cart</Link>
           </li>
-          <li><a class="main-nav-link" href="#pricing">Pricing</a></li>
-          <li><a class="main-nav-link nav-cta" href="#cta">Try for free</a></li>
+          <li><Link className="main-nav-link" to='/Contact'>Contact Us</Link></li>
+          <li><Link className="main-nav-link nav-cta" to="/login">Join Now</Link></li>
 
 
           </ul>
      </nav>
 
-     <button class="btn-mobile-nav">
-        <ion-icon class="icon-mobile-nav" name="menu-outline"></ion-icon>
-        <ion-icon class="icon-mobile-nav" name="close-outline"></ion-icon>
+     <button  class="btn-mobile-nav">
+      <ion-icon class="icon-mobile-nav" name="menu-outline"></ion-icon>
+      <ion-icon class="icon-mobile-nav" name="close-outline"></ion-icon>
+    
       </button>
 
 
